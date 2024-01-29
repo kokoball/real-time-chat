@@ -6,7 +6,7 @@ import { AddPhotoAlternate } from "@mui/icons-material";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { CldUploadButton } from "next-cloudinary";
-// import MessageBox from "./MessageBox";
+import MessageBox from "./MessageBox";
 // import { pusherClient } from "@lib/pusher";
 
 const ChatDetails = ({ chatId }) => {
@@ -147,9 +147,9 @@ const ChatDetails = ({ chatId }) => {
         </div>
 
         <div className="chat-body">
-          {/* {chat?.messages?.map((message, index) => (
+          {chat?.messages?.map((message, index) => (
             <MessageBox key={index} message={message} currentUser={currentUser} />
-          ))} */}
+          ))}
           <div ref={bottomRef} />
         </div>
 
